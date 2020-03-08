@@ -525,9 +525,41 @@ position: absolute;
 
 
 
-/*---------------BTN SCROLL ------------*/
+/*--------------PROJECTS ------------*/
+#projects{
+	background-color: white;
+	color:#787777;
+	padding: 2.5em 0;
+	
+}
+.img-div{
+	width: 20em;
+	height: 20em;
+	
+}
 
+#projects img{
+	transition: transform .5s;
+	max-width: 15em;
+}
 
+#projects h3{
+	font-size: 20px;
+	color:#f7a2a6;
+	font-family: 'chap-medium';
+}
+
+#projects p{
+	color:#787777;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+#projects img:hover{
+	transform: scale(1.05);
+	cursor: pointer;
+	
+}
 
 
 
