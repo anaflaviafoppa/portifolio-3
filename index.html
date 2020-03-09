@@ -200,11 +200,19 @@
           <div class="col-md-4 img-div d-flex justify-content-center align-items-center">
            
             <div>
-              <div>
-                <a onclick="arpina()" id="arpina">
+              
+                <button type="button" class="btn btn-lg btn_arpina" onclick="myarpina()">
                   <img src="imagens/arpina-logotipo-marca.png" />
-                </a>
-              </div>
+                </button>
+
+                <script>
+                  function myarpina() {
+                    var win = window.open('https://arpina.souhibrido.com.br/', '_blank');
+                    win.focus();
+                  }
+
+                </script>
+             
               
 
               <div class="pt-5 d-flex justify-content-center">
