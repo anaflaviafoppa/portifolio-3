@@ -8,7 +8,7 @@ import Home from './views';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter className="App">
       <Switch>
         <Route path="/">
           <Home />
