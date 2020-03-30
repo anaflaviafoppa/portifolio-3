@@ -1,3 +1,4 @@
+/*PADROES******************/
 /*COLORS */
 $darkGrey: #787777;
 $lightPink: #f7a2a6;
@@ -31,6 +32,7 @@ $ChapMedium:'chap-medium';
 
 $open-sans: 'Open Sans', sans-serif;
 
+/*PADROES******************/
 
 .NavBar{
   background-color: $whiter !important;
@@ -39,6 +41,11 @@ $open-sans: 'Open Sans', sans-serif;
     color:$lightPink !important;
     font-size:$sizeH2;
     font-family: $ChapMedium !important;
+    transition: all 0.5s;
+
+    &:hover{
+      transform: scale(1.2);
+    }
   }
   .NavBar__Links {
     color:$darkGrey !important;
@@ -64,7 +71,7 @@ $open-sans: 'Open Sans', sans-serif;
 
     &:hover{
       color:$lightPink !important;
-      transform: scale(1.05);
+      transform: scale(1.1);
     }
 
     &:hover:after{
