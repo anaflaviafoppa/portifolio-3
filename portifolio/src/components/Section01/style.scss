@@ -1,8 +1,11 @@
 /*PADROES******************/
 /*COLORS */
 $darkGrey: #787777;
-$lightPink: #f7a2a6;
+//$lightPink: #f7a2a6;
+$lightPink: #ffc5bb;
 $whiter: rgba(245,245,245);
+//$darkBlue: rgba(3,41,115,1);
+$darkBlue:#2b14af;
 
 /*Sizes*/
 $sizeH1:4em;
@@ -46,9 +49,10 @@ $breakpoint-cellphone:610px;
 
 .Home{
   background-color: $whiter;
-  
   overflow-x: hidden;
   margin: 0;
+  //border-bottom: 5px solid $darkBlue;
+  border-bottom-left-radius: 100px;
 
   @media (max-width: $breakpoint-cellphone) {
     height: 100vh;

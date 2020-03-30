@@ -20,7 +20,7 @@ export default class Section01 extends Component {
             <div className="Home__Text">
               <h1 className="mb-sm-3">High value experiences for all screens</h1>
 
-              <h2 className="pb-sm-3">I‘m Ana Flavia Foppa Web developer looking 
+              <h2 className="mb-sm-3">I‘m Ana Flavia Foppa Web developer looking 
               for opportunities 
               to learn and create digital experiences 
               that simplify and enhance value for companies.</h2>
