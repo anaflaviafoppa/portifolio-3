@@ -9,7 +9,7 @@ $whiter: rgba(245,245,245);
 //$darkBlue: rgba(3,41,115,1);
 $darkBlue:#2b14af;
 
-/*Sizes*/
+/*Sizes LETTERS*/
 $sizeH1:4em;
 $sizeH1Cellphone: 5vh;
 $sizeH2:1.5em;
@@ -21,7 +21,6 @@ $lineHeightPCellphone: 4vh;
 
 /*Border Radius*/
 $radius: 100px;
-
 
 /*Fonts*/
 @font-face {
@@ -52,66 +51,8 @@ $breakpoint-cellphone:610px;
 
 /*PADROES******************/
 
-
-.Section02{
-  background-color: $darkBlue;
-  color: $whiter;
+.section03{
+  background-color: $whiter;
   border-top-right-radius: $radius;
   border-bottom-left-radius: $radius;
-
-  h1{
-    color:$lightPink;
-    font-size: $sizeH1;
-    font-family: $Chap;
-    font-weight: 200;
-    letter-spacing: 2px;
-    margin: 1em 0;
-    transition: all 0.5s;
-
-    &:hover{
-      transform: scale(1.03);
-    }
-  }
-
-  h2{
-    letter-spacing: 2px;
-    font-size:$sizeH2;
-    line-height: $lineHeightP;
-    font-family: $Chap;
-    font-weight: 300;
-  }
-
-  p{
-    font-size: $sizeP;
-    line-height: $lineHeightP;
-    font-family: $open-sans;
-    font-weight: 300;
-  }
-
-  ul{
-    border-left: 3px solid $lightPink;
-    list-style-type: none;
-    li{
-      font-size: $sizeP;
-      font-family: $open-sans;
-      font-weight: 300;
-      line-height: $lineHeightP;
-    }
-  }
-
-  h3{
-    font-size: $sizeH3;
-    color: $lightPink;
-    font-family: $Chap;
-  }
-  .Section02__img{
-    img{
-      @media (max-width: $breakpoint-cellphone) {
-        display:none;
-      }
-    }
-    
-  }
-  
-
 }

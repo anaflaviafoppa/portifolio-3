@@ -16,6 +16,8 @@ $sizeP:1em;
 $lineHeightP: 2em;
 $lineHeightPCellphone: 4vh;
 
+/*Border Radius*/
+$radius: 100px;
 
 /*Fonts*/
 @font-face {
@@ -52,7 +54,7 @@ $breakpoint-cellphone:610px;
   overflow-x: hidden;
   margin: 0;
   //border-bottom: 5px solid $darkBlue;
-  border-bottom-left-radius: 100px;
+  border-bottom-left-radius: $radius;
 
   @media (max-width: $breakpoint-cellphone) {
     height: 100vh;

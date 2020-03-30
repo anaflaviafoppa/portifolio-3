@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import ItemGallery from '../ItemGallery';
 
+import './style.scss';
+
 export default class Section03 extends Component {
   render() {
     return (
-      <section>
-        <div className="container">
+      <section className="section03">
+        <div className="container pt-5 pb-5">
           <ItemGallery 
             left={true}
             title="Arpina"

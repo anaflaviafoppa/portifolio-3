@@ -28,7 +28,10 @@ export default class index extends Component {
         
 
          {/* /*SECTION 03 - GALLERY*/}
-         {/* <Section03 /> */}
+         <div className="section01">
+         <Section03 />
+         </div>
+         
 
          {/* /*SECTION 04 - FAQ*/}
          <Section04 />

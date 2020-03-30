@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Accordion } from 'react-bootstrap';
 
+import './style.scss';
 
 /*COMPONENTS*/
 import ItemAccordion from '../ItemAccordion';
