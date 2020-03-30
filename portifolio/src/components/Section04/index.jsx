@@ -9,7 +9,7 @@ import ItemAccordion from '../ItemAccordion';
 export default class Section04 extends Component {
   render() {
     return (
-      <section className="container" id="faq">
+      <section className="container Section04" id="faq">
         
       <Accordion defaultActiveKey="0">
         <ItemAccordion
