@@ -6,7 +6,7 @@ $whiter: rgba(245,245,245);
 /*Sizes*/
 $sizeH1:2.5em;
 $sizeH2:2em;
-$sizeP:1.5em;
+$sizeP:1em;
 
 
 /*Fonts*/
@@ -44,7 +44,34 @@ $open-sans: 'Open Sans', sans-serif;
     color:$darkGrey !important;
     margin: 0px 20px 0px 20px;
     font-family: $open-sans !important;
-    
+    transition: all 0.5s;
+    font-weight: 600;
+    font-size: $sizeP;
+
+    &:after{
+      transition: all 0.5s;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: '.';
+      color: transparent;
+      background: $lightPink;
+      height: 2px;
+    }
+
+    &:hover{
+      color:$lightPink !important;
+      transform: scale(1.05);
+    }
+
+    &:hover:after{
+      width: 100%;
+    }
   }
+
+  
 }
 
