@@ -20,7 +20,7 @@ export default class index extends Component {
         <Section02 />
 
          {/* /*SECTION 03 - GALLERY*/}
-         <Section03 />
+         {/* <Section03 /> */}
 
          {/* /*SECTION 04 - FAQ*/}
          <Section04 />

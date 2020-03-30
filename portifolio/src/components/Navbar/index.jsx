@@ -1,23 +1,25 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavDropdown, Button } from 'react-bootstrap';
-
+import './style.scss';
 
 export default class NavBar extends Component {
   render() {
     return (
-      <Navbar bg="light" expand="lg">
+      <Navbar collapseOnSelect expand="lg"  className="NavBar">
 
-        <Navbar.Brand href="#home">A</Navbar.Brand>
+        <Navbar.Brand href="#home" className="ml-3 NavBar__Brand">A</Navbar.Brand>
 
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link href="#courses">Courses</Nav.Link>
-            <Nav.Link href="#portifolio">Portifolio</Nav.Link>
-            <Nav.Link href="#faq">FAQ</Nav.Link>
-            <Nav.Link href="#contactme">Contact me</Nav.Link>
+        <Navbar.Collapse id="responsive-navbar-nav" className="d-md-flex justify-content-md-center" >
+        
+          <Nav className="text-center">
+            <Nav.Link className="NavBar__Links" href="#courses">Courses</Nav.Link>
+            <Nav.Link className="NavBar__Links" href="#portifolio">Portifolio</Nav.Link>
+            <Nav.Link className="NavBar__Links" href="#faq">FAQ</Nav.Link>
+            <Nav.Link className="NavBar__Links" href="#contactme">Contact me</Nav.Link>
           </Nav>
+          
         </Navbar.Collapse>
       </Navbar>
     )

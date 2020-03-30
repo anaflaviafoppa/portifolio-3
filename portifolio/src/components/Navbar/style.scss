@@ -1,0 +1,50 @@
+/*COLORS */
+$darkGrey: #787777;
+$lightPink: #f7a2a6;
+$whiter: rgba(245,245,245);
+
+/*Sizes*/
+$sizeH1:2.5em;
+$sizeH2:2em;
+$sizeP:1.5em;
+
+
+/*Fonts*/
+@font-face {
+  font-family: 'chap-medium-light';
+  src: url('../../Fonts/Chap-Light.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+$Chap:'chap-medium-light';
+
+@font-face {
+  font-family: 'chap-medium';
+  src: url('../../Fonts/Chap-Bold.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$ChapMedium:'chap-medium';
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap);
+
+$open-sans: 'Open Sans', sans-serif;
+
+
+.NavBar{
+  background-color: $whiter !important;
+
+  .NavBar__Brand{
+    color:$lightPink !important;
+    font-size:$sizeH2;
+    font-family: $ChapMedium !important;
+  }
+  .NavBar__Links {
+    color:$darkGrey !important;
+    margin: 0px 20px 0px 20px;
+    font-family: $open-sans !important;
+    
+  }
+}
+
