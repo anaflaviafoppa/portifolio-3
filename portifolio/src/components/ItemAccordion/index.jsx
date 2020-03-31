@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 import {Card, Accordion } from 'react-bootstrap';
+import { IoIosArrowDropdownCircle, IoIosArrowDropupCircle } from 'react-icons/io';
+
+
+import './style.scss';
 
 
 export default class ItemAccordion extends Component {
@@ -7,7 +11,7 @@ export default class ItemAccordion extends Component {
     super(props);
     this.state={
       click: true,
-      image: './../images/plus.svg'
+      image: <IoIosArrowDropdownCircle className="Card__Title-icon"/>
     }
 
     this.handleButtonChange=this.handleButtonChange.bind(this);
@@ -20,11 +24,11 @@ export default class ItemAccordion extends Component {
 
     if(this.state.click){
       this.setState({
-        image: './../images/x.svg'
+        image: <IoIosArrowDropupCircle  className="Card__Title-icon"/>
       })
     }else{
       this.setState({
-        image: './../images/plus.svg'
+        image: <IoIosArrowDropdownCircle className="Card__Title-icon"/>
       })
     }
   }
@@ -33,12 +37,14 @@ export default class ItemAccordion extends Component {
   render() {
     return (
       <Card onClick={this.handleButtonChange}>
-      <Accordion.Toggle as={Card.Header} eventKey={this.props.eventKey}>
-      {this.props.title} <img src={this.state.image} alt="control" width="30" height="30"></img>
-      </Accordion.Toggle>
-      <Accordion.Collapse eventKey={this.props.eventKey}>
-        <Card.Body>{this.props.body}</Card.Body>
-      </Accordion.Collapse>
+        <Accordion.Toggle as={Card.Header} eventKey={this.props.eventKey} 
+        className="d-flex justify-content-between Card__Title">
+        {this.props.title} {this.state.image}
+        </Accordion.Toggle>
+
+        <Accordion.Collapse eventKey={this.props.eventKey}>
+          <Card.Body className="Card__Body">{this.props.body}</Card.Body>
+        </Accordion.Collapse>
     </Card>
     )
   }
