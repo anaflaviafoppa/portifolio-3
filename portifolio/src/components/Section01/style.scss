@@ -22,20 +22,13 @@ $radius: 100px;
 /*Fonts*/
 @font-face {
   font-family: 'chap-medium';
-  src: url('../../Fonts/Chap-Light.otf');
+  src: url('../../Fonts/Chap-Medium.otf');
   font-weight: normal;
   font-style: normal;
 }
 $Chap:'chap-medium';
 
-@font-face {
-  font-family: 'chap-medium';
-  src: url('../../Fonts/Chap-Bold.otf');
-  font-weight: normal;
-  font-style: normal;
-}
 
-$ChapMedium:'chap-medium';
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap);
 

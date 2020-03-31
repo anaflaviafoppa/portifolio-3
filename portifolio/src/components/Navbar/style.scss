@@ -12,21 +12,13 @@ $sizeP:1em;
 
 /*Fonts*/
 @font-face {
-  font-family: 'chap-medium-light';
-  src: url('../../Fonts/Chap-Light.otf');
-  font-weight: normal;
-  font-style: normal;
-}
-$Chap:'chap-medium-light';
-
-@font-face {
   font-family: 'chap-medium';
-  src: url('../../Fonts/Chap-Bold.otf');
+  src: url('../../Fonts/Chap-Medium.otf');
   font-weight: normal;
   font-style: normal;
 }
+$Chap:'chap-medium';
 
-$ChapMedium:'chap-medium';
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap);
 
@@ -40,7 +32,7 @@ $open-sans: 'Open Sans', sans-serif;
   .NavBar__Brand{
     color:$lightPink !important;
     font-size:$sizeH2;
-    font-family: $ChapMedium !important;
+    font-family: $Chap !important;
     transition: all 0.5s;
 
     &:hover{
