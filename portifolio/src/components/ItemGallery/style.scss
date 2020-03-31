@@ -15,6 +15,7 @@ $sizeH1Cellphone: 5vh;
 $sizeH2:1.5em;
 $sizeH2Cellphone:2.6vh;
 $sizeP:1em;
+$sizePCellphone:2.6vh;
 $sizeH3: 1.3em;
 $lineHeightP: 2em;
 $lineHeightPCellphone: 4vh;
@@ -37,8 +38,9 @@ $open-sans: 'Open Sans', sans-serif;
 
 
 /**BREACKPOINTS*/
-$breakpoint-tablet: 768px;
-$breakpoint-cellphone:610px;
+$breakpoint-tablet: 770px;
+$breakpoint-cellphone:576px;
+$breakpoint-tabletPlus:950px;
 
 /*PADROES******************/
 
@@ -48,8 +50,28 @@ $breakpoint-cellphone:610px;
 .ItemGallery{
   padding-bottom: 2em;
 
+  .imgLeft{
+   border: 5px solid purple;
+
+    @media (max-width: $breakpoint-tabletPlus) {
+      display: none;
+    }
+  
+    
+  }
+
+  .imgRight{
+    border: 5px solid red;
+    margin:0 auto;
+
+    @media (min-width: $breakpoint-tabletPlus) {
+      display: none !important;
+      
+    }
+  }
+
   img{
-    width: 30vw;
+   
     border-radius:0.5em;
     -webkit-box-shadow: 0 15px 20px rgba(43, 20, 175, 0.2);
     -moz-box-shadow: 0 15px 20px rgba(43, 20, 175, 0.2);
@@ -61,6 +83,21 @@ $breakpoint-cellphone:610px;
       transform: scale(1.02);
 
     }
+
+    @media (max-width: $breakpoint-cellphone) {
+      width: 80vw;
+    }
+  
+    @media (max-width:  $breakpoint-tabletPlus) and (min-width: $breakpoint-cellphone+1) {
+      width: 60vw;
+    }
+
+    @media (min-width:  $breakpoint-tabletPlus+1) {
+      width: 25vw;
+    }
+
+    
+    
   }
 
   h1{
@@ -75,6 +112,12 @@ $breakpoint-cellphone:610px;
     &:hover{
       transform: scale(1.03);
     }
+
+    @media (max-width: $breakpoint-cellphone) {
+      font-size: $sizeH1Cellphone;
+    }
+  
+   
   }
 
   p{
@@ -87,7 +130,7 @@ $breakpoint-cellphone:610px;
 
     
     @media (max-width: $breakpoint-cellphone) {
-      font-size: $sizeH2Cellphone;
+      font-size: $sizePCellphone;
       //margin-bottom: 3em;
       line-height: $lineHeightPCellphone;
     }

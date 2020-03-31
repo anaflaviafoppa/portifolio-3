@@ -36,8 +36,8 @@ $open-sans: 'Open Sans', sans-serif;
 
 
 /**BREACKPOINTS*/
-$breakpoint-tablet: 768px;
-$breakpoint-cellphone:610px;
+$breakpoint-tablet: 770px;
+$breakpoint-cellphone:576px;
 
 /*PADROES******************/
 
@@ -53,12 +53,16 @@ $breakpoint-cellphone:610px;
     height: 100vh;
   }
 
+  @media (max-width: $breakpoint-tablet) and (min-width: $breakpoint-cellphone+1) {
+    height: 50vh;
+  }
+
   .Home__Row{
     
     .Home__Text{ //div que envolve title e description
      
       @media (max-width: $breakpoint-cellphone) {
-        height: 40vh;
+        height: 35vh;
       }
     }
 
@@ -84,8 +88,8 @@ $breakpoint-cellphone:610px;
   
       @media (max-width: $breakpoint-cellphone) {
         //width: auto;
-        height: 45vh;
-        padding-bottom: 2vh;
+        height: 40vh;
+        margin-bottom: 3vh;
        
       }
     }

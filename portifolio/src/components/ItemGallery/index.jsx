@@ -4,29 +4,35 @@ import './style.scss';
  const ItemGallery = (props) => {
   return (
     <div className="row ItemGallery">
-      <div className="col-6 d-flex justify-content-start align-items-center text-left">
+      <div className="col-lg-6 d-flex justify-content-center align-items-center">
         {props.left ? 
-          <div> 
-            <h1>{props.title}</h1>
+          <div className="text-left"> 
+            <h1 onClick={props.functionClick}>{props.title}</h1>
             <p>{props.description}</p>
           </div>  
         : 
-          <img src={props.image} alt={props.title}></img>
+          <img onClick={props.functionClick} className="imgLeft" src={props.image} alt={props.title}></img>
         }
       </div>
 
-      <div className="col-6  d-flex justify-content-end align-items-center text-right ">
-        {props.left ? 
-          <img src={props.image} alt={props.title}></img>
-          : 
-          <div> 
-            <h1>{props.title}</h1>
-            <p>{props.description}</p>
-          </div> 
-        }
+      <div className="col-lg-6 d-flex justify-content-center align-items-center text-md-right">
+        
+          {props.left ? 
+            <img src={props.image} alt={props.title} onClick={props.functionClick}></img>
+            : 
+            <div> 
+              <h1 onClick={props.functionClick}>{props.title}</h1>
+              <p>{props.description}</p>
+              <img className="imgRight d-flex justify-content-center" src={props.image} alt={props.title}></img>
+            </div> 
+          }
+        
+
       </div>
     </div>
   )
 }
+
+
 
 export default ItemGallery;

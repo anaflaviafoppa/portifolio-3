@@ -40,8 +40,9 @@ $open-sans: 'Open Sans', sans-serif;
 
 
 /**BREACKPOINTS*/
-$breakpoint-tablet: 768px;
-$breakpoint-cellphone:610px;
+
+$breakpoint-tablet: 770px;
+$breakpoint-cellphone:576px;
 
 /*PADROES******************/
 
@@ -99,8 +100,15 @@ $breakpoint-cellphone:610px;
   }
   .Section02__img{
     img{
+      width: 45vw;
+      height: auto;
+
       @media (max-width: $breakpoint-cellphone) {
         display:none;
+      }
+
+      @media (max-width: $breakpoint-tablet) and (min-width: $breakpoint-cellphone) {
+         display:none;
       }
     }
     
