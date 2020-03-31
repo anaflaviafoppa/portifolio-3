@@ -14,7 +14,7 @@ export default class Section01 extends Component {
             </div>{/* /col */}
             
             {/*First COL */}
-            <div className="col-md-7 text-lg-right text-sm-center 
+            <div className="col-md-7 text-md-right text-sm-center 
             d-flex justify-content-md-end align-items-center justify-content-sm-start">
             
             <div className="Home__Text">

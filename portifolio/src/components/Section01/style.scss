@@ -53,9 +53,7 @@ $breakpoint-cellphone:576px;
     height: 100vh;
   }
 
-  @media (max-width: $breakpoint-tablet) and (min-width: $breakpoint-cellphone+1) {
-    height: 50vh;
-  }
+ 
 
   .Home__Row{
     
@@ -87,11 +85,12 @@ $breakpoint-cellphone:576px;
       }
   
       @media (max-width: $breakpoint-cellphone) {
-        //width: auto;
         height: 40vh;
         margin-bottom: 3vh;
        
       }
+
+      
     }
   
     h2{

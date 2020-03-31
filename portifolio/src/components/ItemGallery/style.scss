@@ -40,7 +40,8 @@ $open-sans: 'Open Sans', sans-serif;
 /**BREACKPOINTS*/
 $breakpoint-tablet: 770px;
 $breakpoint-cellphone:576px;
-$breakpoint-tabletPlus:950px;
+$breakpoint-Large-devices:950px;
+$breakpoint-Extra-devices:1200px;
 
 /*PADROES******************/
 
@@ -51,9 +52,9 @@ $breakpoint-tabletPlus:950px;
   padding-bottom: 2em;
 
   .imgLeft{
-   border: 5px solid purple;
+   
 
-    @media (max-width: $breakpoint-tabletPlus) {
+    @media (max-width: $breakpoint-Large-devices) {
       display: none;
     }
   
@@ -61,10 +62,10 @@ $breakpoint-tabletPlus:950px;
   }
 
   .imgRight{
-    border: 5px solid red;
+    
     margin:0 auto;
 
-    @media (min-width: $breakpoint-tabletPlus) {
+    @media (min-width: $breakpoint-Large-devices) {
       display: none !important;
       
     }
@@ -88,12 +89,16 @@ $breakpoint-tabletPlus:950px;
       width: 80vw;
     }
   
-    @media (max-width:  $breakpoint-tabletPlus) and (min-width: $breakpoint-cellphone+1) {
+    @media (max-width:  $breakpoint-Large-devices) and (min-width: $breakpoint-cellphone+1) {
       width: 60vw;
     }
 
-    @media (min-width:  $breakpoint-tabletPlus+1) {
-      width: 25vw;
+    @media (min-width:  $breakpoint-Large-devices+1) and (max-width:  $breakpoint-Extra-devices)  {
+      width: 35vw;
+    }
+
+    @media (min-width:$breakpoint-Extra-devices+1){
+      width: 20vw;
     }
 
     
