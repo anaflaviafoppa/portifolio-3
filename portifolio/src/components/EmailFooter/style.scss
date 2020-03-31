@@ -10,7 +10,7 @@ $whiter: rgba(245,245,245);
 $darkBlue:#2b14af;
 
 /*Sizes*/
-$sizeH1:3.5em;
+$sizeH1:4em;
 $sizeH1Cellphone: 5vh;
 $sizeH2:2.5em;
 $sizeH2Cellphone:2.6vh;
@@ -52,50 +52,19 @@ $breakpoint-cellphone:610px;
 
 /*PADROES******************/
 
-.Footer{
-  background-color: $lightPink;
-  color: $darkGrey;
+.EmailFooter__paragraph{
+  background-color: $lightPink !important;
+  color:$darkGrey;
+  border: $lightPink 1px solid;
+  transition: all 0.5s;
+  cursor:pointer;
+  font-size: $sizeH3 !important; 
+  font-family: $open-sans;
 
-  h1{
-    color:$darkBlue;
-    font-size: $sizeH1;
-    font-family: $Chap;
-    font-weight: 200;
-    letter-spacing: 2px;
-    transition: all 0.5s;
-    //padding-bottom: 1em;
-
-    &:hover{
-      transform: scale(1.03);
-    }
+  &:hover{
+    background-color:$lightPink !important;
+    border: $lightPink 1px solid;
+    transform: scale(1.05);
   }
 
-  h3{
-    padding-top: 1em;
-    color:$darkBlue;
-    font-family: $Chap;
-    letter-spacing: 2px;
-    font-size: $sizeH2;
-
-  }
-
-  .SocialMedia{
-    padding-top: 2em;
-    color: $darkGrey;
-
-    .SocialMedia__icon{
-      font-size: $sizeH3;
-      transition: all 0.5s;
-
-      &:hover{
-        transform: scale(1.03);
-        color:$darkBlue;
-      }
-    }
-  }
-
-  p{
-    font-family: $open-sans;
-    font-size: $sizeP;
-  }
 }
