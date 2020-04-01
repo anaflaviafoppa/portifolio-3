@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { OverlayTrigger, Tooltip, Button } from 'react-bootstrap';
+import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 import './style.scss';

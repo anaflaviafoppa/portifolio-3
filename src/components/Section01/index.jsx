@@ -10,7 +10,7 @@ export default class Section01 extends Component {
 
             {/*First COL */}
             <div className="col-md-5">
-              <img className="img-fluid" align="center" src="./../images/Perfil.png"></img>
+              <img className="img-fluid" align="center" src="./../images/Perfil.png" alt="Profile"></img>
             </div>{/* /col */}
             
             {/*First COL */}
