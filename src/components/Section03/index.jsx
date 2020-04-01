@@ -65,14 +65,15 @@ export default class Section03 extends Component {
 
   render() {
     return (
-      <section className="section03" id="portifolio">
+      <section className="section03 pt-5 pb-5" id="portifolio">
         <div className="container pt-5 pb-5">
          
             <ItemGallery 
               left={true}
               title="Arpina"
               description="Front-end development of Arpina's institutional website. 
-              Describes the products that Arpina offers and about the company."
+              Arpina is a marketing agency. So, this website describes the marketing services,
+              about the company's history and the people who work there"
               image="./../images/arpina.png"
               functionClick={this.arpina}
               duration="2 weeks"
@@ -94,7 +95,7 @@ export default class Section03 extends Component {
             <ItemGallery 
               left={true}
               title="Master Lara"
-              description="Master Lara is an MVC application. 
+              description="Master Lara is a MVC application. 
               The application shows the best recipes, through an API, that can be made with what you have 
               in the refrigerator. 
               That way it avoids waste."

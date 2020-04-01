@@ -36,6 +36,7 @@ $open-sans: 'Open Sans', sans-serif;
     font-size:$sizeH2;
     font-family: $Chap !important;
     transition: all 0.5s;
+    cursor: pointer;
 
     &:hover{
       transform: scale(1.1);
@@ -48,7 +49,8 @@ $open-sans: 'Open Sans', sans-serif;
     transition: all 0.5s;
     font-weight: 600;
     font-size: $sizeP;
-
+    cursor: pointer;
+    
     &:after{
       transition: all 0.5s;
       position: absolute;

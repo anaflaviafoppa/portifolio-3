@@ -21,7 +21,7 @@ import './style.scss';
         
           {props.left ?
             
-            <img src={props.image} alt={props.title} onClick={props.functionClick}></img>
+            <img src={props.image} className="imgMiddle d-flex justify-content-center" alt={props.title} onClick={props.functionClick}></img>
             : 
             <div> 
               <h1 onClick={props.functionClick}>{props.title}</h1>

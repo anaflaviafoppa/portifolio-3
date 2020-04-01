@@ -73,7 +73,7 @@ export default class Footer extends Component {
           <div className="row">
             <div className="col d-flex justify-content-center align-items-center ">
 
-              <div>
+              <div className="pt-5">
                 <h1>Drop me a line</h1>
 
                 {/*Email with Tooltip*/}

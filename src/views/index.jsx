@@ -10,10 +10,28 @@ import './style.scss';
 
 
 export default class index extends Component {
+  constructor(){
+    super();
+    this.state={
+      toggle: true
+    };
+
+    this.collapse = this.collapse.bind(this);
+  };
+
+  collapse(){
+   
+    this.setState(({
+      toggle: !this.state.toggle
+    }));
+    
+    
+  }
+
   render() {
     return (
       <div>
-        <NavBar />
+        <NavBar collapse={() => this.collapse()} toggle={this.state.toggle}/>
 
         {/* /*SECTION 01*/}
         <div className="section01">

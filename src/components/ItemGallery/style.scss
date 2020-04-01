@@ -55,13 +55,16 @@ $breakpoint-Extra-devices:1200px;
   margin-bottom: 5em !important;
 
   .imgLeft{
-   
 
     @media (max-width: $breakpoint-Large-devices) {
       display: none;
     }
   
     
+  }
+
+  .imgMiddle{
+    margin: 0 auto;
   }
 
   .imgRight{

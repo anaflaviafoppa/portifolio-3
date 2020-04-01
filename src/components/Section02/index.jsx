@@ -4,7 +4,7 @@ import './style.scss';
 export default class Section02 extends Component {
   render() {
     return (
-      <section id="courses" className="Section02">
+      <section id="courses" className="Section02 pt-5 pb-5">
         <div className="container ">
           <div className="row pt-5 pb-5">
 
