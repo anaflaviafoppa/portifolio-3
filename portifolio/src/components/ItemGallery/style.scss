@@ -1,8 +1,10 @@
 /*PADROES******************/
 /*COLORS */
 $darkGrey: #787777;
-//$lightPink: #f7a2a6;
-$lightPink: #ffc5bb;
+//
+
+$lightPink: #f7a2a6;
+//$lightPink: #ffc5bb;
 
 
 $whiter: rgba(245,245,245);
@@ -99,7 +101,7 @@ $breakpoint-Extra-devices:1200px;
     }
 
     @media (min-width:$breakpoint-Extra-devices+1){
-      width: 20vw;
+      width: 30vw;
     }
 
     
@@ -113,6 +115,7 @@ $breakpoint-Extra-devices:1200px;
     font-weight: 200;
     margin: 0 0;
     transition: all 0.5s;
+    cursor: pointer;
 
     &:hover{
       transform: scale(1.03);
