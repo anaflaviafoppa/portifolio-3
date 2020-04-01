@@ -36,7 +36,7 @@ export default class ItemAccordion extends Component {
 
   render() {
     return (
-      <Card onClick={this.handleButtonChange}>
+      <Card className="Card" onClick={this.handleButtonChange}>
         <Accordion.Toggle as={Card.Header} eventKey={this.props.eventKey} 
         className="d-flex justify-content-between Card__Title">
         {this.props.title} {this.state.image}

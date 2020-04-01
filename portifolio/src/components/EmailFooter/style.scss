@@ -6,8 +6,8 @@ $lightPink: #ffc5bb;
 
 
 $whiter: rgba(245,245,245);
-//$darkBlue: rgba(3,41,115,1);
-$darkBlue:#2b14af;
+$darkBlue: rgba(3,41,115,1);
+//$darkBlue:#2b14af;
 
 /*Sizes*/
 $sizeH1:4em;
@@ -15,12 +15,12 @@ $sizeH1Cellphone: 5vh;
 $sizeH2:2.5em;
 $sizeH2Cellphone:2.6vh;
 $sizeP:1em;
-$sizeH3: 1.8em;
+$sizePCellphone:2.6vh;
+$sizeH3: 2em;
+$sizeH3Cellphone:1em;
 $lineHeightP: 2em;
-$lineHeightPCellphone: 4vh;
+$lineHeightPCellphone: 3vh;
 
-/*Border Radius*/
-$radius: 100px;
 
 
 /*Fonts*/
@@ -45,18 +45,22 @@ $breakpoint-cellphone:610px;
 /*PADROES******************/
 
 .EmailFooter__paragraph{
-  background-color: $lightPink !important;
-  color:$darkGrey;
-  border: $lightPink 1px solid;
+  background-color: $darkBlue !important;
+  color:$lightPink !important;
+  
   transition: all 0.5s;
   cursor:pointer;
-  font-size: $sizeH3 !important; 
-  font-family: $open-sans;
+  font-size: $sizeP !important; 
+  font-family: $open-sans !important;
 
   &:hover{
-    background-color:$lightPink !important;
-    border: $lightPink 1px solid;
+    background-color:$darkBlue !important;
+    
     transform: scale(1.05);
+  }
+
+  @media (max-width: $breakpoint-cellphone) {
+    font-size: $sizePCellphone !important;
   }
 
 }

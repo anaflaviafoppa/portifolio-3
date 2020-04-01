@@ -71,31 +71,37 @@ export default class Section03 extends Component {
             <ItemGallery 
               left={true}
               title="Arpina"
-              description="Front-end development of Arpina's institutional website using Wordpress."
+              description="Front-end development of Arpina's institutional website. 
+              Describes the products that Arpina offers and about the company."
               image="./../images/arpina.png"
               functionClick={this.arpina}
+              duration="2 weeks"
+              languages="Wordpress"
             />
           
             <ItemGallery 
               left={false}
               title="Magical Forest"
-              description="Full development of the 2D game on Canvas over in 5 days. 
-              The movements of the characters were programmed in JavaScript using spritesheet. 
+              description="Full development of the 2D game.
               The concept of the game is the rivalry between two characters, Orc and Elf,
               who cast spells at each other, the winner will be the survivor of that battle!"
               image="./../images/magical-forest.png"
               functionClick={this.magicalForest}
+              duration="5 days"
+              languages="HTML/Canvas, JavaScript and CSS"
             />
          
             <ItemGallery 
               left={true}
               title="Master Lara"
-              description="Master Lara is an MVC application. Developed in NODEJS, Express, HBS and SCSS. 
+              description="Master Lara is an MVC application. 
               The application shows the best recipes, through an API, that can be made with what you have 
               in the refrigerator. 
-              That way it avoids waste. The entire development of Master Lara was completed in 5 days."
+              That way it avoids waste."
               image="./../images/master-lara.png"
               functionClick={this.masterLara}
+              duration="5 days"
+              languages="NODEJS, Express, HBS and SCSS"
             />
           
           
@@ -103,14 +109,15 @@ export default class Section03 extends Component {
           <ItemGallery 
             left={false}
             title="Tasksy"
-            description="Tasksy is an application focused on small businesses.  that aims to keep 
+            description="Tasksy's goal is keep 
             the environment organized in a more fun way. The workspace is created, 
-            and new tasks are added, such as keeping the desk organized, watering the plants. 
+            and new tasks are added, such as watering the plants. 
             Whoever does the tasks will accumulate points. At the end of the week, 
-            the employee who obtains more points wins. 
-            The development of the entire application was completed in 7 days."
+            the employee who obtains more points wins!"
             image="./../images/taskly.png"
             functionClick={this.tasksy}
+            duration="7 days"
+            languages="NODEJS, Express, React and SCSS"
           />
         </div>
         

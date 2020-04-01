@@ -7,7 +7,8 @@ $lightPink: #ffc5bb;
 
 $whiter: rgba(245,245,245);
 //$darkBlue: rgba(3,41,115,1);
-$darkBlue:#2b14af;
+//$darkBlue:#2b14af;
+$darkBlue:#032973;
 
 /*Sizes*/
 $sizeH1:4em;
@@ -18,9 +19,6 @@ $sizeP:1em;
 $sizeH3: 1.3em;
 $lineHeightP: 2em;
 $lineHeightPCellphone: 4vh;
-
-/*Border Radius*/
-$radius: 100px;
 
 
 /*Fonts*/
@@ -46,6 +44,6 @@ $breakpoint-cellphone:610px;
 /*PADROES******************/
 
 .Section04{
-  background-color: $darkBlue;
-  border-bottom-right-radius: $radius;
+  background-color: $whiter;
+  
 }

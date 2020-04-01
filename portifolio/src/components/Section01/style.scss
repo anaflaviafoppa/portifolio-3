@@ -5,7 +5,8 @@ $darkGrey: #787777;
 $lightPink: #ffc5bb;
 $whiter: rgba(245,245,245);
 //$darkBlue: rgba(3,41,115,1);
-$darkBlue:#2b14af;
+//$darkBlue:#2b14af;
+$darkBlue:#032973;
 
 /*Sizes*/
 $sizeH1:4em;
@@ -16,8 +17,7 @@ $sizeP:1em;
 $lineHeightP: 2em;
 $lineHeightPCellphone: 4vh;
 
-/*Border Radius*/
-$radius: 100px;
+
 
 /*Fonts*/
 @font-face {
@@ -46,9 +46,8 @@ $breakpoint-cellphone:576px;
   background-color: $whiter;
   overflow-x: hidden;
   margin: 0;
-  //border-bottom: 5px solid $darkBlue;
-  border-bottom-left-radius: $radius;
-
+  
+  
   @media (max-width: $breakpoint-cellphone) {
     height: 100vh;
   }
@@ -58,9 +57,14 @@ $breakpoint-cellphone:576px;
   .Home__Row{
     
     .Home__Text{ //div que envolve title e description
-     
+      text-align: end;
+
       @media (max-width: $breakpoint-cellphone) {
         height: 35vh;
+      }
+
+      :last-child{
+        margin: 0 0 0 10vw;
       }
     }
 
@@ -69,7 +73,6 @@ $breakpoint-cellphone:576px;
       color:$lightPink;
       font-family: $Chap;
       font-weight: 300;
-      letter-spacing: 2px;
   
       @media (max-width: $breakpoint-cellphone) {
         font-size: $sizeH1Cellphone;
@@ -94,7 +97,6 @@ $breakpoint-cellphone:576px;
     }
   
     h2{
-      letter-spacing: 2px;
       color:$darkGrey;
       font-size:$sizeP;
       line-height: $lineHeightP;
@@ -109,6 +111,8 @@ $breakpoint-cellphone:576px;
       }
   
     }
+
+   
   }
 
   

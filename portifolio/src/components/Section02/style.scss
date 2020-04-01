@@ -6,22 +6,21 @@ $lightPink: #ffc5bb;
 
 
 $whiter: rgba(245,245,245);
-//$darkBlue: rgba(3,41,115,1);
-$darkBlue:#2b14af;
+//$darkBlue:#2b14af;
+$darkBlue:#032973;
 
 /*Sizes*/
 $sizeH1:4em;
 $sizeH1Cellphone: 5vh;
-$sizeH2:1.5em;
+$sizeH2:1.1em;
 $sizeH2Cellphone:2.6vh;
 $sizeP:1em;
 $sizePCellphone:2.6vh;
-$sizeH3: 1.3em;
+$sizeH3: 1em;
 $lineHeightP: 2em;
 $lineHeightPCellphone: 4vh;
 
-/*Border Radius*/
-$radius: 100px;
+
 
 
 /*Fonts*/
@@ -53,15 +52,13 @@ $breakpoint-Extra-devices:1200px;
 .Section02{
   background-color: $darkBlue;
   color: $whiter;
-  border-top-right-radius: $radius;
-  border-bottom-left-radius: $radius;
+
 
   h1{
     color:$lightPink;
     font-size: $sizeH1;
     font-family: $Chap;
     font-weight: 200;
-    letter-spacing: 2px;
     margin: 1em 0;
     transition: all 0.5s;
 
@@ -75,7 +72,6 @@ $breakpoint-Extra-devices:1200px;
   }
 
   h2{
-    letter-spacing: 2px;
     font-size:$sizeH2;
     line-height: $lineHeightP;
     font-family: $Chap;
@@ -96,6 +92,13 @@ $breakpoint-Extra-devices:1200px;
     @media (max-width: $breakpoint-cellphone) {
       font-size: $sizePCellphone;
       line-height: $lineHeightPCellphone;
+    }
+
+    a{
+      text-transform: none;
+      text-decoration: none !important;
+      color:$lightPink;
+      font-family: $Chap;
     }
   }
 

@@ -68,7 +68,7 @@ export default class Footer extends Component {
 
   render() {
     return (
-      <footer className="Footer pt-5 pb-5 text-md-center">
+      <footer className="Footer pt-5 text-md-center">
         <div className="container">
           <div className="row">
             <div className="col d-flex justify-content-center align-items-center">
@@ -79,7 +79,7 @@ export default class Footer extends Component {
                 {/*Email with Tooltip*/}
                 <EmailFooter />
 
-                <h3>+351 913 839 769</h3>
+                <h2>+351 913 839 769</h2>
 
                 <div className="SocialMedia">
 
@@ -102,7 +102,7 @@ export default class Footer extends Component {
 
                 </div> { /* END OF SOCIAL MEDIA */}
 
-                <p className="pt-5">Ana Flavia Foppa © 2020</p>
+                <p className="pt-5 pb-2">Ana Flavia Foppa © 2020</p>
 
               </div>
               

@@ -7,7 +7,8 @@ $lightPink: #ffc5bb;
 
 $whiter: rgba(245,245,245);
 //$darkBlue: rgba(3,41,115,1);
-$darkBlue:#2b14af;
+//$darkBlue:#2b14af;
+$darkBlue:#032973;
 
 /*Sizes*/
 $sizeH1:4em;
@@ -19,8 +20,6 @@ $sizeH3: 1.3em;
 $lineHeightP: 2em;
 $lineHeightPCellphone: 4vh;
 
-/*Border Radius*/
-$radius: 100px;
 
 
 /*Fonts*/
@@ -45,29 +44,36 @@ $breakpoint-cellphone:610px;
 
 /*PADROES******************/
 
+.Card{
+  border: none !important;
 
-.Card__Title{
-  background-color: $whiter !important;
-  color: $darkGrey;
-  font-family: $Chap;
-  font-size: $sizeH2;
-  cursor: pointer;
 
-  .Card__Title-icon{
-    color:$lightPink;
+  .Card__Title{
+    background-color: $whiter !important;
+    color: $darkGrey;
+    font-family: $Chap;
     font-size: $sizeH2;
-    transition: all 0.5s;
-    
+    cursor: pointer;
+    border: none !important;
 
-    &:hover{
-      transform: scale(1.3);
+    .Card__Title-icon{
+      color:$lightPink;
+      font-size: $sizeH2;
+      transition: all 0.5s;
+      border: none !important;
+
+      &:hover{
+        transform: scale(1.3);
+      }
     }
   }
-}
 
-.Card__Body{
-  color:$darkGrey;
-  font-family: $open-sans;
-  font-size: $sizeP;
-  
+  .Card__Body{
+    color:$darkGrey;
+    font-family: $open-sans;
+    font-size: $sizeP;
+    background-color: $whiter !important;
+    border: 2px solid $whiter !important;
+  }
+
 }
