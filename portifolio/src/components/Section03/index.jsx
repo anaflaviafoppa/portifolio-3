@@ -65,7 +65,7 @@ export default class Section03 extends Component {
 
   render() {
     return (
-      <section className="section03">
+      <section className="section03" id="portifolio">
         <div className="container pt-5 pb-5">
          
             <ItemGallery 

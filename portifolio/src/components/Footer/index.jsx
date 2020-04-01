@@ -68,10 +68,10 @@ export default class Footer extends Component {
 
   render() {
     return (
-      <footer className="Footer pt-5 text-md-center">
+      <footer className="Footer pt-5 text-md-center" id="contactme">
         <div className="container">
           <div className="row">
-            <div className="col d-flex justify-content-center align-items-center">
+            <div className="col d-flex justify-content-center align-items-center ">
 
               <div>
                 <h1>Drop me a line</h1>

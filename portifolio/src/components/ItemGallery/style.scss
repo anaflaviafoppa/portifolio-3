@@ -50,7 +50,7 @@ $breakpoint-Extra-devices:1200px;
 
 
 .ItemGallery{
-  padding-bottom: 2em;
+  margin-bottom: 5em !important;
 
   .imgLeft{
    
@@ -111,7 +111,7 @@ $breakpoint-Extra-devices:1200px;
     font-size: $sizeH1;
     font-family: $Chap;
     font-weight: 200;
-    margin: 1em 0;
+    margin: 0 0;
     transition: all 0.5s;
 
     &:hover{

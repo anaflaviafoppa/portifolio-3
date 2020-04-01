@@ -38,12 +38,21 @@ export default class ItemAccordion extends Component {
     return (
       <Card className="Card" onClick={this.handleButtonChange}>
         <Accordion.Toggle as={Card.Header} eventKey={this.props.eventKey} 
-        className="d-flex justify-content-between Card__Title">
-        {this.props.title} {this.state.image}
+        className=" Card__Title">
+          <div className="row d-flex justify-content-between">
+            <div className="col-8">
+              {this.props.title}
+            </div>
+
+            <div className="col-4 d-flex justify-content-end">
+              {this.state.image}
+            </div>
+          </div>
+         
         </Accordion.Toggle>
 
         <Accordion.Collapse eventKey={this.props.eventKey}>
-          <Card.Body className="Card__Body">{this.props.body}</Card.Body>
+          <Card.Body className="Card__Body text-justify">{this.props.body}</Card.Body>
         </Accordion.Collapse>
     </Card>
     )

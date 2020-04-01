@@ -37,7 +37,7 @@ $open-sans: 'Open Sans', sans-serif;
 
 /**BREACKPOINTS*/
 $breakpoint-tablet: 770px;
-$breakpoint-cellphone:576px;
+$breakpoint-cellphone:550px;
 
 /*PADROES******************/
 
@@ -90,6 +90,11 @@ $breakpoint-cellphone:576px;
       @media (max-width: $breakpoint-cellphone) {
         height: 40vh;
         margin-bottom: 3vh;
+       
+      }
+
+      @media (max-width: $breakpoint-tablet) and (min-width: $breakpoint-cellphone+1){
+        display:none;
        
       }
 

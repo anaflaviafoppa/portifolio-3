@@ -50,6 +50,8 @@ $breakpoint-cellphone:610px;
 .Footer{
   background-color: $darkBlue;
   color: $darkGrey;
+  text-align: center;
+
 
   h1{
     color:$whiter;
@@ -58,7 +60,7 @@ $breakpoint-cellphone:610px;
     font-weight: 200;
     transition: all 0.5s;
     //padding-bottom: 1em;
-
+    
     &:hover{
       transform: scale(1.03);
     }
@@ -72,6 +74,7 @@ $breakpoint-cellphone:610px;
     color:$whiter;
     font-family: $Chap;
     font-size: $sizeH2;
+    
 
     @media (max-width: $breakpoint-cellphone) {
       font-size: $sizeH3Cellphone;
