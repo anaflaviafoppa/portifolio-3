@@ -25,6 +25,11 @@ $Chap:'chap-medium';
 
 $open-sans: 'Open Sans', sans-serif;
 
+
+/**BREACKPOINTS*/
+$breakpoint-tablet: 770px;
+$breakpoint-cellphone:550px;
+
 /*PADROES******************/
 
 .NavBar{
@@ -72,6 +77,11 @@ $open-sans: 'Open Sans', sans-serif;
 
     &:hover:after{
       width: 100%;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      margin-bottom: 1em;
+     
     }
   }
 

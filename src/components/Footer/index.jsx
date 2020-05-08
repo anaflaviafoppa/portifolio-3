@@ -83,22 +83,15 @@ export default class Footer extends Component {
 
                 <div className="SocialMedia">
 
-                  <button type="button" className="btn  btn-lg btn_site"  onClick={this.myLinkedin} >
-                    <FaLinkedin className="SocialMedia__icon"/>
-                  </button>
+                  <FaLinkedin className="SocialMedia__icon" onClick={this.myLinkedin}/>
+                 
                 
-
-                  <button type="button" className="btn  btn-lg btn_site"  onClick={this.myGithub} >
-                    <FaGithub className="SocialMedia__icon"/>
-                  </button>
-
-                  <button type="button" className="btn btn_site btn-lg"  onClick={this.myStack} >
-                    <FaStackOverflow className="SocialMedia__icon"/>
-                  </button>
-
-                  <button type="button" className="btn btn_site btn-lg" onClick={this.myAngelList}>
-                    <FaAngellist className="SocialMedia__icon"/>
-                  </button>
+                  <FaGithub className="SocialMedia__icon" onClick={this.myGithub}/>
+                  
+                  <FaStackOverflow className="SocialMedia__icon" onClick={this.myStack}/>
+   
+                  <FaAngellist className="SocialMedia__icon" onClick={this.myAngelList}/>
+                  
 
                 </div> { /* END OF SOCIAL MEDIA */}
 

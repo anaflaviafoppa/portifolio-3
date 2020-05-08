@@ -7,14 +7,13 @@ import Home from './views';
 
 function App() {
   return (
-    <Home />
-    /* <BrowserRouter className="App">
+    <BrowserRouter className="App">
       <Switch>
         <Route path="/">
           <Home />
         </Route>
       </Switch>
-    </BrowserRouter> */
+    </BrowserRouter>
   );
 }
 

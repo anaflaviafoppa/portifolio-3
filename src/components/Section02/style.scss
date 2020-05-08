@@ -80,6 +80,7 @@ $breakpoint-Extra-devices:1200px;
     line-height: $lineHeightP;
     font-family: $Chap;
     font-weight: 300;
+    margin:0;
 
     @media (max-width: $breakpoint-cellphone) {
       font-size: $sizeH2Cellphone;
@@ -123,10 +124,19 @@ $breakpoint-Extra-devices:1200px;
     color: $lightPink;
     font-family: $Chap;
   }
+
+  .Courses__title{
+    margin: 1.8em 0 0 0;
+  }
   .Section02__img{
     img{
      
       height: auto;
+      transition: all 0.5s;
+  
+      &:hover{
+        transform: scale(1.05);
+      }
 
       @media (max-width: $breakpoint-cellphone) {
         display:none;

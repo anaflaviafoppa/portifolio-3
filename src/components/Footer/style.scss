@@ -87,6 +87,8 @@ $breakpoint-cellphone:610px;
       font-size: $sizeH3;
       transition: all 0.5s;
       color: $lightPink;
+      margin:  0.5em;
+      cursor: pointer;
 
       &:hover{
         transform: scale(1.03);

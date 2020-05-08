@@ -24,14 +24,11 @@ export default class NavBar extends Component {
               A
             </Link>
 
-        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={this.props.collapse}
-         
-        />
+        <Navbar.Toggle aria-controls="basic-navbar-nav"/>
 
-        <Navbar.Collapse id="basic-navbar-nav" className={!this.props.toggle ? "navbar-collapse collapse show" : "navbar-collapse collapse "}
-       > 
+        <Navbar.Collapse id="basic-navbar-nav"> 
           <Nav className="mr-auto">
-            {/* <Nav.Link className="NavBar__Links" href="#courses"> */}
+            
             
               <Link
                   className="NavBar__Links"
@@ -41,7 +38,6 @@ export default class NavBar extends Component {
                   smooth={true}
                   offset={-80}
                   duration= {1000}
-                  onClick={this.props.collapse}
               >
                 Courses
               </Link>

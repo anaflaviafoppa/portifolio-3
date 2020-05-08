@@ -38,7 +38,7 @@ export default class Section02 extends Component {
                     
                       
 
-                <h2>Bachelor in Civil Engineering</h2>
+                <h2 className="Courses__title">Bachelor in Civil Engineering</h2>
                 <h2>Universidade do Estado de Santa Catarina</h2>
                 <h3>5 years</h3>
                 
@@ -51,7 +51,7 @@ export default class Section02 extends Component {
                 Structural projects are responsible 
                 for the design of slabs, beams, columns, foundations. </p>
                   
-                <h2>Internship at Embraco</h2>
+                <h2 className="Courses__title">Internship at Embraco</h2>
                 {/* <p><a href="http://www.embraco.com/">www.embraco.com</a></p> */}
                 <h3>set 2016 - ago 2017</h3>
                   
