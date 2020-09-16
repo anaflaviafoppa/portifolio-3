@@ -1,0 +1,124 @@
+/*PADROES******************/
+/*COLORS */
+$darkGrey: #787777;
+$lightPink: #f7a2a6;
+//$lightPink: #ffc5bb;
+$whiter: rgba(245,245,245);
+//$darkBlue: rgba(3,41,115,1);
+//$darkBlue:#2b14af;
+$darkBlue:#032973;
+
+/*Sizes*/
+$sizeH1:4em;
+$sizeH1Cellphone: 5vh;
+$sizeH2:2em;
+$sizeH2Cellphone:2.6vh;
+$sizeP:1em;
+$lineHeightP: 2em;
+$lineHeightPCellphone: 4vh;
+
+
+
+/*Fonts*/
+@font-face {
+  font-family: 'chap-medium';
+  src: url('../../Fonts/Chap-Medium.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+$Chap:'chap-medium';
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap);
+
+$open-sans: 'Open Sans', sans-serif;
+
+
+/**BREACKPOINTS*/
+$breakpoint-tablet: 770px;
+$breakpoint-cellphone:550px;
+
+/*PADROES******************/
+
+
+.Home{
+  background-color: $whiter;
+  overflow-x: hidden;
+  margin: 0;
+  
+  
+  @media (max-width: $breakpoint-cellphone) {
+    height: 100vh;
+  }
+
+ 
+
+  .Home__Row{
+    
+    .Home__Text{ //div que envolve title e description
+      text-align: end;
+
+      @media (max-width: $breakpoint-cellphone) {
+        height: 35vh;
+      }
+
+      :last-child{
+        margin: 0 0 0 10vw;
+      }
+    }
+
+    h1{
+      font-size: $sizeH1;
+      color:$lightPink;
+      font-family: $Chap;
+      font-weight: 300;
+  
+      @media (max-width: $breakpoint-cellphone) {
+        font-size: $sizeH1Cellphone;
+        margin-bottom: 3vh;
+      }
+    }
+  
+    img{
+      transition: all 0.5s;
+  
+      &:hover{
+        transform: scale(1.05);
+      }
+  
+      @media (max-width: $breakpoint-cellphone) {
+        height: 40vh;
+        margin-bottom: 3vh;
+       
+      }
+
+      @media (max-width: $breakpoint-tablet) and (min-width: $breakpoint-cellphone+1){
+        display:none;
+       
+      }
+
+      
+    }
+  
+    h2{
+      color:$darkGrey;
+      font-size:$sizeP;
+      line-height: $lineHeightP;
+      font-family: $open-sans;
+      font-weight: 300;
+  
+      
+      @media (max-width: $breakpoint-cellphone) {
+        font-size: $sizeH2Cellphone;
+        //margin-bottom: 3em;
+        line-height: $lineHeightPCellphone;
+      }
+  
+    }
+
+   
+  }
+
+  
+}

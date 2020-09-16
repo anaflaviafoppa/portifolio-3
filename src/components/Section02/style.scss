@@ -1,0 +1,161 @@
+/*PADROES******************/
+/*COLORS */
+$darkGrey: #787777;
+$lightPink: #f7a2a6;
+//$lightPink: #ffc5bb;
+
+
+$whiter: rgba(245,245,245);
+//$darkBlue:#2b14af;
+$darkBlue:#032973;
+
+/*Sizes*/
+$sizeH1:4em;
+$sizeH1Cellphone: 5vh;
+$sizeH2:1.1em;
+$sizeH2Cellphone:2.6vh;
+$sizeP:1em;
+$sizePCellphone:2.6vh;
+$sizeH3: 1em;
+$lineHeightP: 2em;
+$lineHeightPCellphone: 4vh;
+
+
+
+
+/*Fonts*/
+@font-face {
+  font-family: 'chap-medium';
+  src: url('../../Fonts/Chap-Medium.otf');
+  font-weight: lighter;
+  font-style: normal;
+}
+$Chap:'chap-medium';
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap);
+
+$open-sans: 'Open Sans', sans-serif;
+
+
+/**BREACKPOINTS*/
+
+$breakpoint-tablet: 770px;
+$breakpoint-cellphone:576px;
+$breakpoint-Large-devices:950px;
+$breakpoint-Extra-devices:1200px;
+
+/*PADROES******************/
+
+
+.Section02{
+  background-color: $darkBlue;
+  color: $whiter;
+
+
+  h1{
+    color:$lightPink;
+    font-size: $sizeH1;
+    font-family: $Chap;
+    font-weight: 200;
+    margin:0;
+    transition: all 0.5s;
+
+    &:hover{
+      transform: scale(1.03);
+    }
+
+    &:last-of-type{
+      margin: 1em 0;
+    }
+
+    @media (max-width: $breakpoint-cellphone) {
+      font-size: $sizeH1Cellphone;
+    }
+  }
+
+  h2{
+    font-size:$sizeH2;
+    line-height: $lineHeightP;
+    font-family: $Chap;
+    font-weight: 300;
+    margin:0;
+
+    @media (max-width: $breakpoint-cellphone) {
+      font-size: $sizeH2Cellphone;
+      line-height: $lineHeightP;
+    }
+  }
+
+  p{
+    font-size: $sizeP;
+    line-height: $lineHeightP;
+    font-family: $open-sans;
+    font-weight: 300;
+
+    @media (max-width: $breakpoint-cellphone) {
+      font-size: $sizePCellphone;
+      line-height: $lineHeightPCellphone;
+    }
+
+    a{
+      text-transform: none;
+      text-decoration: none !important;
+      color:$lightPink;
+      font-family: $Chap;
+    }
+  }
+
+  ul{
+    border-left: 3px solid $lightPink;
+    list-style-type: none;
+
+    li{
+      font-size: $sizeP;
+      font-family: $open-sans;
+      font-weight: 300;
+      line-height: $lineHeightP;
+    }
+  }
+
+  h3{
+    font-size: $sizeH3;
+    color: $lightPink;
+    font-family: $Chap;
+  }
+
+  .Courses__title{
+    margin: 1.8em 0 0 0;
+  }
+  .Section02__img{
+    img{
+     
+      height: auto;
+      transition: all 0.5s;
+  
+      &:hover{
+        transform: scale(1.05);
+      }
+
+      @media (max-width: $breakpoint-cellphone) {
+        display:none;
+      }
+
+      @media (max-width: $breakpoint-tablet) and (min-width: $breakpoint-cellphone+1) {
+         display:none;
+      }
+
+      @media (max-width: $breakpoint-Large-devices) and (min-width: $breakpoint-tablet+1) {
+        width: 30vw;
+      }
+
+      @media (min-width:$breakpoint-Large-devices +1){
+        width: 40vw;
+      }
+    }
+    
+  }
+  
+
+}

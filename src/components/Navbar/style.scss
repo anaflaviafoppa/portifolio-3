@@ -1,0 +1,90 @@
+/*PADROES******************/
+/*COLORS */
+$darkGrey: #787777;
+$lightPink: #f7a2a6;
+$whiter: rgba(245,245,245);
+$whiterTransparency:rgba(245,245,245, 0.8);
+
+/*Sizes*/
+$sizeH1:2.5em;
+$sizeH2:2em;
+$sizeP:1em;
+
+
+/*Fonts*/
+@font-face {
+  font-family: 'chap-medium';
+  src: url('../../Fonts/Chap-Medium.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+$Chap:'chap-medium';
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap);
+
+$open-sans: 'Open Sans', sans-serif;
+
+
+/**BREACKPOINTS*/
+$breakpoint-tablet: 770px;
+$breakpoint-cellphone:550px;
+
+/*PADROES******************/
+
+.NavBar{
+  background-color: $whiterTransparency !important;
+  position: sticky;
+
+  .NavBar__Brand{
+    color:$lightPink !important;
+    font-size:$sizeH2;
+    font-family: $Chap !important;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+  .NavBar__Links {
+    color:$darkGrey !important;
+    margin: 0px 20px 0px 20px;
+    font-family: $open-sans !important;
+    transition: all 0.5s;
+    font-weight: 600;
+    font-size: $sizeP;
+    cursor: pointer;
+    
+    &:after{
+      transition: all 0.5s;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: '.';
+      color: transparent;
+      background: $lightPink;
+      height: 2px;
+    }
+
+    &:hover{
+      color:$lightPink !important;
+      transform: scale(1.01);
+    }
+
+    &:hover:after{
+      width: 100%;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      margin-bottom: 1em;
+     
+    }
+  }
+
+  
+}
+

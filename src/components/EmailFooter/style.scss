@@ -1,0 +1,66 @@
+/*PADROES******************/
+/*COLORS */
+$darkGrey: #787777;
+//$lightPink: #f7a2a6;
+$lightPink: #ffc5bb;
+
+
+$whiter: rgba(245,245,245);
+$darkBlue: rgba(3,41,115,1);
+//$darkBlue:#2b14af;
+
+/*Sizes*/
+$sizeH1:4em;
+$sizeH1Cellphone: 5vh;
+$sizeH2:2.5em;
+$sizeH2Cellphone:2.6vh;
+$sizeP:1em;
+$sizePCellphone:2.6vh;
+$sizeH3: 2em;
+$sizeH3Cellphone:1em;
+$lineHeightP: 2em;
+$lineHeightPCellphone: 3vh;
+
+
+
+/*Fonts*/
+@font-face {
+  font-family: 'chap-medium';
+  src: url('../../Fonts/Chap-Medium.otf');
+  font-weight: lighter;
+  font-style: normal;
+}
+$Chap:'chap-medium';
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap);
+
+$open-sans: 'Open Sans', sans-serif;
+
+
+/**BREACKPOINTS*/
+$breakpoint-tablet: 768px;
+$breakpoint-cellphone:610px;
+
+/*PADROES******************/
+
+.EmailFooter__paragraph{
+  background-color: $darkBlue !important;
+  color:$lightPink !important;
+  
+  transition: all 0.5s;
+  cursor:pointer;
+  font-size: $sizeP !important; 
+  font-family: $open-sans !important;
+
+  &:hover{
+    background-color:$darkBlue !important;
+    
+    transform: scale(1.05);
+  }
+
+  @media (max-width: $breakpoint-cellphone) {
+    font-size: $sizePCellphone !important;
+  }
+
+}
