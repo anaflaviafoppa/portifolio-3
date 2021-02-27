@@ -4,24 +4,20 @@ $darkGrey: #787777;
 $lightPink: #f7a2a6;
 //$lightPink: #ffc5bb;
 
-
-$whiter: rgba(245,245,245);
+$whiter: rgba(245, 245, 245);
 //$darkBlue:#2b14af;
-$darkBlue:#032973;
+$darkBlue: #032973;
 
 /*Sizes*/
-$sizeH1:4em;
+$sizeH1: 4em;
 $sizeH1Cellphone: 5vh;
-$sizeH2:1.5em;
-$sizeH2Cellphone:2.6vh;
-$sizeP:1em;
-$sizePCellphone:2.6vh;
+$sizeH2: 1.5em;
+$sizeH2Cellphone: 2.6vh;
+$sizeP: 1em;
+$sizePCellphone: 2.6vh;
 $sizeH3: 1em;
 $lineHeightP: 2em;
 $lineHeightPCellphone: 4vh;
-
-
-
 
 /*Fonts*/
 @font-face {
@@ -30,74 +26,46 @@ $lineHeightPCellphone: 4vh;
   font-weight: lighter;
   font-style: normal;
 }
-$Chap:'chap-medium';
-
-
+$Chap: 'chap-medium';
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap);
 
 $open-sans: 'Open Sans', sans-serif;
 
-
 /**BREACKPOINTS*/
 
 $breakpoint-tablet: 770px;
-$breakpoint-cellphone:576px;
-$breakpoint-Large-devices:950px;
-$breakpoint-Extra-devices:1200px;
+$breakpoint-cellphone: 576px;
+$breakpoint-Large-devices: 950px;
+$breakpoint-Extra-devices: 1200px;
 
+.Section05 {
+  margin-top: 5.7vh;
+  h2 {
+    font-size: $sizeH2;
+    color: $darkBlue;
+    font-family: $Chap;
+  }
 
-.Section05{
+  img {
+    height: auto;
+    transition: all 0.5s;
 
-    margin-top: 5.7vh;
-    h2{
-        font-size: $sizeH2;
-        color: $darkBlue;
-        font-family: $Chap;
-      }
-
-      img{
-     
-        height: auto;
-        transition: all 0.5s;
-    
-        &:hover{
-          transform: scale(1.05);
-        }
-  
-      
-      }
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
 }
 
+.img-brand {
+  max-width: 10vw;
 
-.img-brand{
-    max-width: 13vw;
+  @media (max-width: $breakpoint-cellphone) {
+    max-width: 45vw;
+    margin-bottom: 5vh;
 
-    @media (max-width: $breakpoint-cellphone) {
-        max-width: 70vw;
-      }
-
-    
+    &:first-of-type {
+      margin-top: 2vh;
+    }
+  }
 }
-
-.img-brand.glintt{
-    max-width: 10vw;
-
-    @media (max-width: $breakpoint-cellphone) {
-        margin-bottom: 2vh;
-        max-width: 50vw;
-      }
-    
-}
-
-.img-brand.ducafe{
-    max-width: 11.5vw;
-    @media (max-width: $breakpoint-cellphone) {
-        margin-top: 2vh;
-        max-width: 50vw;
-      }
-}
-
-
-
-
